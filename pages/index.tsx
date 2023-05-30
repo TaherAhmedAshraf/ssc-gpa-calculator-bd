@@ -1,5 +1,6 @@
 import React from "react";
 import { subjects, groups } from "../constant/ssc";
+import Footer from "@/components/Footer";
 
 export default function ssc() {
   const [group, setGroup] = React.useState(groups[0]);
@@ -38,6 +39,7 @@ export default function ssc() {
 
   return (
     <div>
+      <Footer />
       <div className="container mx-auto">
         <div className="w-11/12 md:w-1/2 mx-auto bg-[#222] my-5 rounded-2xl overflow-hidden">
           <div className="bg-[#6C63FF] p-3 rounded-2xl text-white text-center font-semibold text-xl">
@@ -152,6 +154,8 @@ export default function ssc() {
           )}
         </div>
       </div>
+      {/* footer */}
+      <Footer />
     </div>
   );
 }
